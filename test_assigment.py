@@ -14,12 +14,14 @@ def test_generate_random_addition_problem_reproducibility():
     assert problem1 != problem3, "Different calls with same seed should not produce different problems"
     assert isinstance(problem1, str), "Problem should be a string"
     assert '+' in problem1, "Problem should contain a '+' sign"
+    
 
 def test_check_addition_problem():
     assert check_addition_problem(5, 7, 12) == True
     assert check_addition_problem(5, 7, 13) == False
     assert check_addition_problem(0, 0, 0) == True
     assert check_addition_problem(100, 200, 300) == True
+    
 
 def test_generate_random_subtraction_problem_reproducibility():
     random.seed(42)
@@ -33,6 +35,8 @@ def test_generate_random_subtraction_problem_reproducibility():
     assert isinstance(problem1, str), "Problem should be a string"
     assert '-' in problem1, "Problem should contain a '-' sign"
     assert problem1 != problem3, "Different calls with same seed should not produce different problems"
+    assert eval(problem) >= 0
+    
 
 
 def test_check_subtraction_problem():
@@ -73,6 +77,13 @@ def test_generate_random_division_problem_reproducibility():
     assert '/' in problem1, "Problem should contain a '/' sign"
     assert problem1 != problem3, "Different calls with same seed should not produce different problems"
 
+def test_correct_format_of_problem():
+    for i in range(10):
+        problem = generate_random_division_problem()
+        assert isinstance(eval(problem), int)
+        assert eval(problem) >= 0
+        assert eval(problem) <= 100        
+
 def test_check_division_problem():
     assert check_division_problem(10, 2, 5) == True
     assert check_division_problem(10, 2, 6) == False
@@ -82,3 +93,4 @@ def test_check_division_problem():
 def test_check_division_problem_division_by_zero():
     with pytest.raises(ZeroDivisionError):
         check_division_problem(10, 0, 0)
+
