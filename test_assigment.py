@@ -35,7 +35,7 @@ def test_generate_random_subtraction_problem_reproducibility():
     assert isinstance(problem1, str), "Problem should be a string"
     assert '-' in problem1, "Problem should contain a '-' sign"
     assert problem1 != problem3, "Different calls with same seed should not produce different problems"
-    assert eval(problem) >= 0
+    assert eval(problem1) >= 0
     
 
 
