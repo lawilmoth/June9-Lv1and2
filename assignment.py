@@ -83,8 +83,8 @@ def check_division_problem(x, y, answer):
     """Check if the answer to the division problem is correct.
     The problem will be x / y where x is the product of two integers provided as arguments and y is the second integer.
     The answer is an integer.
-    If there write the line below 
-            raise DivisionByZeroError("Division by zero is not allowed")
+    If the the problem would divide by zero, copy and paste this error.
+            raise ZeroDivisionError("Division by zero is not allowed")
     Return True if the answer is correct, False otherwise.
     Ex: check_division_problem(15 , 3, 5) -> True, because 15 / 3 = 5
     Ex 2: check_division_problem(10 , 2, 5) -> False, because 10 / 2 = 5, but the answer is not correct.
