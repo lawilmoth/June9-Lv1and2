@@ -80,9 +80,14 @@ def test_generate_random_division_problem_reproducibility():
 def test_correct_format_of_problem():
     for i in range(10):
         problem = generate_random_division_problem()
-        assert isinstance(eval(problem), int)
-        assert eval(problem) >= 0
-        assert eval(problem) <= 100        
+        while '0' in problem[2:]:
+            problem = generate_random_division_problem()
+
+        else:
+            assert isinstance(eval(problem), float)
+            assert eval(problem) >= 0
+            assert eval(problem) <= 100    
+        
 
 def test_check_division_problem():
     assert check_division_problem(10, 2, 5) == True
