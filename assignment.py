@@ -10,7 +10,7 @@ def generate_random_addition_problem():
     Ex 2: '1 + 9'
     return the string representation of the addition problem.
     """
-    pass # Replace this with your code
+    pass
 
 
 
@@ -22,7 +22,7 @@ def check_addition_problem(x, y, answer):
     Ex: check_addition_problem(3 , 5, 8) -> True, because 3 + 5 = 8
     Ex 2: check_addition_problem(1 , 9, 10) -> False, because 1 + 9 = 10, but the answer is not correct.
     """
-    pass # Replace this with your code
+    pass
     
 
 def generate_random_subtraction_problem():
@@ -32,7 +32,7 @@ def generate_random_subtraction_problem():
     return the string representation of the subtraction problem.
     The problem should be little kid friendly. Answers of should always be positive.
     """
-    pass # Replace this with your code
+    pass
 
 def check_subtraction_problem(x, y, answer):
     """Check if the answer to the subtraction problem is correct.
@@ -42,15 +42,14 @@ def check_subtraction_problem(x, y, answer):
     Ex: check_subtraction_problem(5 , 3, 2) -> True, because 5 - 3 = 2
     Ex 2: check_subtraction_problem(9 , 1, 8) -> False, because 9 - 1 = 8, but the answer is not correct.
     """
-    pass # Replace this with your code
-
+    pass
 def generate_random_multiplication_problem():
     """Randomly generate 2 integers between 0 and 10 and return a string representing the multiplication problem.
     Ex: '3 * 5'
     Ex 2: '1 * 9'
     return the string representation of the multiplication problem.
     """
-    pass # Replace this with your code
+    pass
 
 def check_multiplication_problem(x, y, answer):
     """Check if the answer to the multiplication problem is correct.
@@ -60,7 +59,7 @@ def check_multiplication_problem(x, y, answer):
     Ex: check_multiplication_problem(3 , 5, 15) -> True, because 3 * 5 = 15
     Ex 2: check_multiplication_problem(1 , 9, 10) -> False, because 1 * 9 = 9, but the answer is not correct.
     """
-    pass # Replace this with your code
+    pass
 
 def generate_random_division_problem():
     """Randomly generate 2 integers between 0 and 10 and return a string representing the division problem.
@@ -77,7 +76,7 @@ def generate_random_division_problem():
     return the string representation of the division problem.
     The problem should be little kid friendly. Answers of should always be positive integers.
     """
-    pass # Replace this with your code
+    pass
 
 def check_division_problem(x, y, answer):
     """Check if the answer to the division problem is correct.
@@ -90,4 +89,5 @@ def check_division_problem(x, y, answer):
     Ex 2: check_division_problem(10 , 2, 5) -> False, because 10 / 2 = 5, but the answer is not correct.
 
     """
-    pass # Replace this with your code
+    pass
+
